@@ -1,0 +1,209 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  font-family: sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("table.jpg");
+  background-size: cover;
+}
+img {
+  height: 12rem;
+  width: 12rem;
+}
+main {
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.first-side,
+.second-side {
+  max-width: 50%;
+}
+.shopping-board {
+  overflow: hidden;
+  position: relative;
+  width: 50rem;
+  height: 50rem;
+  background-color: #5c320e;
+  border-radius: 3rem;
+  border: 3px solid white;
+}
+.shopping-board-title {
+  color: #5c320e;
+  text-align: center;
+  margin-block: 1rem;
+  font-size: 4.2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+/*  */
+.cart {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-cart {
+  border: 0.3rem solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-fruit {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.fruit-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  position: relative;
+}
+
+.fruit-name {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.fruit-price {
+  font-size: 2rem;
+}
+
+.fruit-price-sentence {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  font-weight: bold;
+  padding: 0.25rem;
+  background-color: white;
+
+  border-radius: 0.25rem;
+}
+.per-kg {
+  font-size: 2rem;
+}
+
+.fruit-inputs {
+  display: flex;
+  gap: 1rem;
+}
+.main-btn {
+  padding-inline: 1rem;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 8rem;
+  height: 4rem;
+  font-size: 3.2rem;
+  outline: none;
+}
+
+.fruit-unit {
+  position: absolute;
+  bottom: -2.4rem;
+  font-size: 2rem;
+}
+
+.fruit-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.functioning-fruit {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-to-cart-btn {
+  margin-top: 4.8rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.add-to-cart-btn:hover,
+.add-to-cart-btn:active {
+  background-color: transparent;
+  color: black;
+}
+
+.shopping-board-answer {
+  font-size: 2.4rem;
+  color: white;
+  margin-left: 1rem;
+}
+
+.clear-shopping-board-btn {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  height: 6.2rem;
+  background: transparent;
+  border: none;
+  border-top: 3px solid white;
+  cursor: pointer;
+  font-size: 3.2rem;
+  color: white;
+  word-spacing: 3px;
+}
+
+.clear-shopping-board-btn:is(:hover, :active) {
+  background-color: black;
+  color: white;
+}
+
+.place-for-shopping-board-answers {
+  height: 27rem;
+  overflow-y: auto;
+}
+
+/*  */
+
+#answer {
+  font-size: 3.2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#total {
+  color: lime;
+  font-size: 4.2rem;
+  position: absolute;
+  bottom: 6.2rem;
+  left: 0.2rem;
+  word-spacing: 22rem;
+}
