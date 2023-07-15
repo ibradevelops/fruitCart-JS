@@ -76,7 +76,6 @@ const fruitFunction = function (
     }
   });
   ////// Add fruit to cart
-  // ako answer stavim u fruittocart click event, on ce da kreira h1 element svaki put kada kliknem, ovako on ne kreira h1, vec samo updatuje odredjene stvari kao sto su cijena i kolicina
   const answer = document.createElement("h1");
   const total = document.createElement("h1");
   fruitToCart.addEventListener("click", function () {
@@ -109,9 +108,6 @@ const fruitFunction = function (
       fruitToCart.style.pointerEvents = "none";
     }
     console.log(totalPriceArray);
-    /////// Nakon dugo pokusaja sam ovo shvatio i implementirao...
-    ////// Bez ovoga bi mi se total elementi nagomilavali jedan na drugoga
-    ////// Ovim cinom sam odabrao sve total elemente, i sve one prije zadnjega sam obrisao, tako da je ostao posljednji, i uvijek ce da ostane posljednji, nakon svakoga klika
     const allTotals = document.querySelectorAll("#total");
     for (const total of allTotals) {
       if (total !== shoppingBoard.lastElementChild) {
